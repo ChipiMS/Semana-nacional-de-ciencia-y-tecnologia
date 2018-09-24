@@ -1,0 +1,5 @@
+name: faq
+type: module
+description: preguntas frecuentes
+package: Custom
+core: 8.x

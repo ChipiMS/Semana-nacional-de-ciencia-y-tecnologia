@@ -1,0 +1,6 @@
+faq:
+  path: /faq
+  defaults:
+    _controller: Drupal\faq\Controller\FaqController::lista
+  requirements:
+    _permission: 'access content'

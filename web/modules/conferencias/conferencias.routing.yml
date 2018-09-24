@@ -1,0 +1,6 @@
+conferencias:
+  path: /conferencias
+  defaults:
+    _controller: Drupal\conferencias\Controller\ConferenciasController::lista
+  requirements:
+    _permission: 'access content'

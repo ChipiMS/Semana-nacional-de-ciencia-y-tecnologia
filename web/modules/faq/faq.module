@@ -1,0 +1,10 @@
+<?php
+function faq_theme($existing, $type, $theme, $path) {
+	$path = drupal_get_path('module', 'faq');
+	return array(
+		'faq-list' => array(
+			'variables' => array('faq_list_table' => NULL, 'new_faq'=>NULL),
+			'path'=> $path . '/theme',
+		)
+	);
+}

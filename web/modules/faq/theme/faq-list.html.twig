@@ -1,0 +1,11 @@
+<h1>Listado de preguntas frecuentes</h1>
+<ul class="accordion" id="accordionExample">
+    {% for faq in faq_list_table %}
+        <li>
+            <div style="cursor: pointer;" data-toggle="collapse" data-target="#collapse{{loop.index}}">{{faq.question}}</div>
+            <div id="collapse{{loop.index}}" class="collapse" data-parent="#accordionExample">{{faq.answare}}</div>
+        </li>
+    {% else %}
+        No hay preguntas frecuentes.
+    {% endfor %}
+</ul>

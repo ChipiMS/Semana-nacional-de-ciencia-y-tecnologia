@@ -1,0 +1,5 @@
+name: conferencias
+type: module
+description: conferencias
+package: Custom
+core: 8.x

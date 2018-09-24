@@ -1,0 +1,10 @@
+<?php
+function conferencias_theme($existing, $type, $theme, $path) {
+	$path = drupal_get_path('module', 'conferencias');
+	return array(
+		'conferencias-list' => array(
+			'variables' => array('conferencias_list_table' => NULL, 'new_conferencias'=>NULL),
+			'path'=> $path . '/theme',
+		)
+	);
+}

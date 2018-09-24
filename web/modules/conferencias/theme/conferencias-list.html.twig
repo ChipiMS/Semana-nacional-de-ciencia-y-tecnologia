@@ -1,0 +1,11 @@
+<h1>Listado de conferencias</h1>
+<ul class="accordion" id="accordionExample">
+    {% for conferencias in conferencias_list_table %}
+        <li>
+            <div style="cursor: pointer;" data-toggle="collapse" data-target="#collapse{{loop.index}}">{{conferencias.question}}</div>
+            <div id="collapse{{loop.index}}" class="collapse" data-parent="#accordionExample">{{conferencias.answare}}</div>
+        </li>
+    {% else %}
+        No hay conferencias.
+    {% endfor %}
+</ul>
